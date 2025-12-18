@@ -9,7 +9,6 @@ def main():
                         по команде /order (номер заказа) подтягивает статус из orders.json;'''
 
     bot = CLIBot(
-        model_name=cfg.openrouter.OPENROUTER_MODEL,
         system_prompt=system_prompt
     )
     bot("user")
