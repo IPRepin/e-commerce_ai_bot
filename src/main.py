@@ -1,5 +1,4 @@
 from src.bot.cli_bot import CLIBot
-from src.config.config import settings as cfg
 
 
 def main():
@@ -11,4 +10,7 @@ def main():
     bot = CLIBot(
         system_prompt=system_prompt
     )
-    bot("user")
+    bot(system_prompt)
+
+if __name__ == '__main__':
+    main()
