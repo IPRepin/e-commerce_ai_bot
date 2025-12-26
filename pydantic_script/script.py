@@ -3,7 +3,7 @@ from langchain_openai import ChatOpenAI
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, ValidationError
-from src.config.config import settings as cfg
+from config.config import settings as cfg
 
 
 class WeatherInfo(BaseModel):

@@ -27,11 +27,16 @@ class OpenrouterSettings(BaseSettings):
     OPENROUTER_MODEL: str
 
 
+class HuggingFaceEmbeddingsSettings(BaseSettings):
+    EMBEDDINGS_MODEL: str = "all-MiniLM-L6-v2"
+
+
 class Settings(BaseSettings):
     data: DataSettings = DataSettings()
     shop: ShopSettings = ShopSettings()
     logging: LoggingSettings = LoggingSettings()
     openrouter: OpenrouterSettings = OpenrouterSettings()
+    huggingface: HuggingFaceEmbeddingsSettings = HuggingFaceEmbeddingsSettings()
 
 
     class Config:

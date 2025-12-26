@@ -3,5 +3,5 @@
 .venv
 e-commerce_ai_bot.iml
 src/bot/__pycache__/
-src/config/__pycache__/
+config/__pycache__/
 src/utils/__pycache__/

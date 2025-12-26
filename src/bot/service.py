@@ -1,7 +1,7 @@
 import json
 
 from src.utils.logger import logger
-from src.config.config import settings as cfg
+from config.config import settings as cfg
 
 
 def load_data(file_path: str):

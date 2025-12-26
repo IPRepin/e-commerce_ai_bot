@@ -1,0 +1,36 @@
+examples:
+  - question: Как объединить два словаря в Python?
+    answer: |
+      В Python 3.9+ можно использовать оператор `|`:
+      ```python
+      dict1 = {"a": 1, "b": 2}
+      dict2 = {"c": 3, "d": 4}
+      merged = dict1 | dict2
+      print(merged)  # {'a': 1, 'b': 2, 'c': 3, 'd': 4}
+      ```
+      Для более старых версий используйте `{**dict1, **dict2}` или `dict1.update(dict2)`.
+
+  - question: Как прочитать JSON-файл в Python?
+    answer: |
+      Используйте модуль `json`:
+      ```python
+      import json
+
+      with open("data.json", "r", encoding="utf-8") as f:
+          data = json.load(f)
+      print(data)
+      ```
+      Убедитесь, что файл существует и содержит валидный JSON.
+
+  - question: Как проверить, существует ли файл?
+    answer: |
+      Используйте `os.path.exists()` или `pathlib`:
+      ```python
+      from pathlib import Path
+
+      if Path("myfile.txt").exists():
+          print("Файл существует")
+      else:
+          print("Файл не найден")
+      ```
+      `pathlib` — более современный и читаемый подход.

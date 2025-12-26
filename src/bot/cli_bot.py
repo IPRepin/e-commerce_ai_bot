@@ -7,7 +7,7 @@ from langchain_openai import ChatOpenAI
 
 from src.bot.service import get_order_status, find_faq_answer
 from src.utils.logger import logger
-from src.config.config import settings as cfg
+from config.config import settings as cfg
 
 
 class CLIBot():

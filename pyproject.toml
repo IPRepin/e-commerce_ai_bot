@@ -5,11 +5,14 @@ description = "Add your description here"
 requires-python = ">=3.12"
 dependencies = [
     "langchain",
-    "langchain_community",
+    "langchain-community",
     "langchain_openai",
     "langchain-gigachat>=0.3.12",
     "openai",
     "pydantic==2.11.2",
     "pydantic-settings==2.8.1",
     "ruff==0.8.1",
-    ]
+    "langchain-huggingface>=0.3.1",
+    "sentence-transformers>=5.2.0",
+    "chromadb>=1.4.0",
+]
