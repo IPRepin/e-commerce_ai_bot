@@ -5,3 +5,4 @@ e-commerce_ai_bot.iml
 src/bot/__pycache__/
 config/__pycache__/
 src/utils/__pycache__/
+few-shot/__pycache__/
